@@ -1,4 +1,3 @@
-/* Global page styling */
 * {
   box-sizing: border-box;
 }
@@ -7,29 +6,26 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-  background-color: #222; /* dark outer background like the reference */
+  background-color: #222;
 }
 
-/* Outer Pokedex container */
 .pokedex {
-  max-width: 1000px; /* keeps content from stretching too wide */
-  margin: 40px auto; /* center on the page with space above/below */
+  max-width: 1000px;
+  margin: 40px auto;
   padding: 40px 32px;
-  background-color: #ffffff; /* big white panel in the middle */
-  border-radius: 18px; /* rounded corners like the screenshot */
+  background-color: #ffffff;
+  border-radius: 18px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 
-/* Main “Pokedex” heading */
 .pokedex > h1 {
   margin: 0 0 32px;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #bbbbbb; /* light gray title text (not pure black) */
+  color: #bbbbbb;
 }
 
-/* Layout for the cards → grid of 4x2 */
 .pokecard-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 cards per row on desktop */
@@ -37,39 +33,34 @@ body {
   justify-items: center;
 }
 
-/* Individual card */
 .pokecard {
   width: 200px;
   padding: 20px 16px;
-  background-color: #e5e5e5; /* light gray card background */
+  background-color: #e5e5e5;
   border-radius: 18px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
 
-/* Pokémon name */
 .pokecard h2 {
   margin: 0 0 12px;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #2f4bff; /* bright blue like the reference */
+  color: #2f4bff;
 }
 
-/* Pokémon sprite */
 .pokecard img {
   width: 100px;
   height: 100px;
   margin-bottom: 12px;
 }
 
-/* Type / EXP text */
 .pokecard p {
   margin: 4px 0;
   font-size: 0.95rem;
   color: #333333;
 }
 
-/* Small responsiveness: fewer columns on narrow screens */
 @media (max-width: 900px) {
   .pokecard-list {
     grid-template-columns: repeat(3, 1fr);
