@@ -1,0 +1,46 @@
+.battleSimulator {
+  min-height: 100vh;
+  padding: 2rem;
+  background: radial-gradient(circle at top, #0b1026, #02040f);
+  color: #e6e9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.battleSimulator h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff4d4d, #ff884d);
+  color: #111;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 100, 100, 0.35);
+}
+
+.spaceCrafts {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.gameStatus {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  min-height: 1.5em;
+}
