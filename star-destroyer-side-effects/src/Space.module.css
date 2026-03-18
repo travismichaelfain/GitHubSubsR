@@ -1,0 +1,47 @@
+.space {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(109, 213, 250, 0.12),
+      transparent 22%
+    ),
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(167, 139, 250, 0.14),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 50% 80%,
+      rgba(255, 255, 255, 0.08),
+      transparent 18%
+    ),
+    linear-gradient(180deg, #050816 0%, #0a1024 45%, #111827 100%);
+}
+
+.space::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.18) 1px,
+    transparent 1px
+  );
+  background-size: 36px 36px;
+  opacity: 0.22;
+}
+
+.space::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.01)
+  );
+}
