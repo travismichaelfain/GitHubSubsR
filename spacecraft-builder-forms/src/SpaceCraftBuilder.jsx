@@ -23,13 +23,15 @@ function reducer(state, action) {
 }
 
 function SpaceCraftBuilder() {
+  const generateId = () => crypto.randomUUID();
+
   const [{ items }, dispatch] = useReducer(reducer, {
     items: [],
   });
   const [editingItem, setEditingItem] = useState(null);
 
   const addItem = (item) => {
-    dispatch({ type: "add-item", payload: item });
+    dispatch({ type: "add-item", payload: { ...item, id: generateId() } });
   };
 
   const removeItem = (id) => {
