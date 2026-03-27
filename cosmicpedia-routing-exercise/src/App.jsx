@@ -23,7 +23,7 @@ const router = createBrowserRouter([
             element: <SpaceContent />,
           },
           {
-            path: ":id",
+            path: "/:id",
             element: <ContentPage />,
           },
         ],
