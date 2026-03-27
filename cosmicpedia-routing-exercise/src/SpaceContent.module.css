@@ -1,0 +1,28 @@
+.spaceContent {
+  padding: 2rem;
+}
+
+.spaceContent h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.spaceContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.spaceContent li {
+  margin-bottom: 0.75rem;
+}
+
+.spaceContent a {
+  text-decoration: none;
+  color: #3b82f6;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.spaceContent a:hover {
+  color: #1d4ed8;
+}
